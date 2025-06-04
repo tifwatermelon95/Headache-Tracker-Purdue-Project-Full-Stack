@@ -11,14 +11,14 @@ git clone https://github.com/tifwatermelon95/Headache-Tracker.git
 cd Headache-Tracker
 
 ### 2. Setting up the Backend
-cd Backend
-npm install
-npm start
+- cd Backend
+- npm install
+- npm start
 
 ### 3. Setting up the Frontend
-cd Frontend
-npm install
-npm run dev
+- cd Frontend
+- npm install
+- npm run dev
 The frontend will start on http://localhost:5173
 
 ### Features include:
