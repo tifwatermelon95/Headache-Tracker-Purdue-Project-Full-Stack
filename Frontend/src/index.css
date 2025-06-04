@@ -1,0 +1,11 @@
+/*
+Global styles that affect your entire app.
+*/
+/* index.css - Global styles */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f8d7da;  /* Pink background */
+  font-family: Arial, sans-serif;
+}

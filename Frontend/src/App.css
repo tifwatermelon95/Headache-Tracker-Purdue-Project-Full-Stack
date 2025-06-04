@@ -1,0 +1,492 @@
+/*
+Styles specific to your App component and its direct children.
+*/
+/* App.css - Combined styles */
+.App {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100%;
+  overflow-y: auto;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+/* Header Styles */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.brain-image-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 60px;
+  background-color: transparent;
+}
+
+.brain-image {
+  width: 100%;
+  background-color: transparent;
+}
+
+.webapp-header {
+  text-align: center;
+  width: 100%;
+}
+
+.header-title {
+  font-family: Didot, serif;
+  font-weight: bold;
+  font-size: 3.5em;
+  margin-bottom: 50px;
+}
+
+.webapp-header nav {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.webapp-header button {
+  background-color: #f5f0f0f7;
+  border: none;
+  padding: 10px 90px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  box-shadow: 8px 5px 2px 2px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+/* HeadacheLog Form Styles */
+.headache-log {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 40px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input[type="date"],
+.form-group input[type="range"],
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Location Grid Styles */
+.location-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.location-button {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.dot {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  transition: background-color 0.2s;
+}
+
+.location-button.selected .dot {
+  background-color: #007bff;
+}
+
+.location-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.location-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Slider Styles */
+.slider-container {
+  margin: 15px 0;
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  color: #666;
+}
+
+/* Checkbox Grid Styles */
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-item input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Form Controls */
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #f5f0f0f7;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-top: 20px;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #e8e8e8;
+}
+
+/* Range Input Styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  background: #ddd;
+  border-radius: 2px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .location-grid,
+  .checkbox-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .webapp-header nav {
+    gap: 50px;
+  }
+  
+  .webapp-header button {
+    padding: 10px 40px;
+  }
+}
+
+/* Stats Page Styles */
+.stats-page {
+  min-height: 100vh;
+  background-color: #f8d7da;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.stats-header h1{
+  font-family: Didot, serif;
+  font-weight: bold;
+  font-size: 3.5em;
+  margin-bottom: 30px;
+}
+
+.stats-header button {
+  border: none;
+  padding: 10px 90px;
+  margin-right: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 8px 5px 2px 2px rgba(0,0,0,0.1);
+}
+
+.stat-card {
+  background: #ffffff;
+  padding: 20px 40px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.stat-card h3 {
+  font-family: Helvetica;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.stat-number {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(62, 58, 73);
+}
+
+
+.stat-nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.s-nav-button {
+  background-color: #f5f0f0f7;
+  border: none;
+  padding: 10px 90px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  box-shadow: 8px 5px 2px 2px rgba(0,0,0,0.1);
+}
+
+
+.date-range {
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 10px;
+  display: block;
+}
+
+.back-button {
+  background-color: #f5f0f0f7;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 20px 0;
+}
+
+.login-form{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  background:rgba(63, 161, 156, 0.383);
+  padding: 12px;
+}
+
+
+.login-form input{
+  line-height: 1.2rem;
+  padding: 8px;
+  border: none;
+  margin: 4px;
+  width: 30%;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+  width:100%;
+  height:400px;
+}
+
+/* Entries Page Styles */
+
+.entries-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8d7da;
+  min-height: 100vh;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.nav-button {
+  background-color: #f5f0f0f7;
+  border: none;
+  padding: 10px 90px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  box-shadow: 8px 5px 2px 2px rgba(0,0,0,0.1);
+}
+
+.nav-button.active {
+  background-color: #e8e8e8;
+}
+
+.entries-title {
+  font-family: Didot, serif;
+  font-weight: bold;
+  font-size: 3.5em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.entries-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.entry-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 20px;
+}
+
+.entry-date {
+  min-width: 120px;
+  text-align: center;
+  border-right: 1px solid #eee;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.date-number {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.month-year {
+  color: #666;
+  font-size: 1em;
+}
+
+.entry-details {
+  flex: 1;
+}
+
+.detail-row {
+  margin-bottom: 12px;
+  line-height: 1.5;
+  font-size: 0.95em;
+}
+
+.detail-row strong {
+  color: #555;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.entry-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.delete-button {
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+}
+
+/* Update entry-card to handle positioning */
+.entry-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
