@@ -8,7 +8,7 @@ Make sure you have installed:
 ### 1. Clone the repository
 
 git clone https://github.com/tifwatermelon95/Headache-Tracker.git
-cd Headache-Tracker
+- cd Headache-Tracker
 
 ### 2. Setting up the Backend
 - cd Backend
